@@ -309,6 +309,35 @@ h2.end {
   color: rgba(128, 127, 127, 0.877);
 }
 
+/* Source Code Button */
+.source_code {
+  position: absolute !important;
+  bottom: 15px !important;
+  right: 15px !important;
+  width: 35px !important;
+  height: 35px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(221, 221, 221, 0.3) !important;
+  background-color: rgba(43, 0, 129, 0.8) !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  padding: 0px !important;
+}
+
+.source_code img {
+  width: 30px;
+  height: 30px;
+}
+
+.source_code:hover {
+  background-color: rgba(189, 189, 189, 0.4) !important;
+  transform: scale(1.1) !important;
+  border: 1px solid white !important;
+}
+
 @media only screen and (max-width: 1024px) {
   .intro {
     margin-top: 70px;

@@ -14,7 +14,7 @@
     />
     <meta name="author" content="David Onyema" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta
       property="og:title"
       content="David Onyema | Web & Game Developer Portfolio"
@@ -48,7 +48,7 @@
     <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 
-    <!-- Custom Stylesheet -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- JSON-LD Structured Data -->
@@ -87,40 +87,48 @@
       <div class="head-nav">
         <h1 class="h1">My Portfolio</h1>
         <ul class="navigation" id="nav-menu">
-          <a
-            class="cancel"
-            onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-          >
-            <img src="/images/cancel.svg" alt="Close menu" />
-          </a>
-          <a
-            id="nav1"
-            href="#home"
-            onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-            >Home</a
-          >
-          <a
-            id="nav2"
-            href="#skills"
-            onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-            >Skills</a
-          >
-          <a
-            id="nav3"
-            href="#projects"
-            onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-            >Projects</a
-          >
-          <a
-            id="nav4"
-            href="#contact"
-            onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-            >Contact</a
-          >
+          <li>
+            <a
+              class="cancel"
+              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
+            >
+              <img src="/images/cancel.svg" alt="Close menu" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="#home"
+              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
+              >Contact</a
+            >
+          </li>
         </ul>
+
         <div class="overlay" id="overlay"></div>
+
         <div
-          class="harmburger"
+          class="hamburger"
           onclick="addClass('show','nav-menu'); addClass('show','overlay'); addClass('overlay-active','body')"
         >
           <img src="/images/hamburger.svg" alt="Open menu" />
@@ -148,42 +156,54 @@
     </header>
 
     <main>
+      <!-- Skills Section -->
       <section class="skills" id="skills">
         <h2 class="_head">Skills</h2>
         <div class="_box">
-          <img src="images/HTML-logo.png" alt="HTML logo" width="220px" />
-          <a>HTML</a>
+          <img src="images/HTML-logo.png" alt="HTML logo" width="220" /><span
+            >HTML</span
+          >
         </div>
         <div class="_box">
-          <img src="images/CSS.png" alt="CSS logo" width="220px" />
-          <a>CSS</a>
+          <img src="images/CSS.png" alt="CSS logo" width="220" /><span
+            >CSS</span
+          >
         </div>
         <div class="_box">
-          <img src="images/JS.png" alt="JavaScript logo" width="180px" />
-          <a>JavaScript</a>
+          <img src="images/JS.png" alt="JavaScript logo" width="180" /><span
+            >JavaScript</span
+          >
         </div>
         <div class="_box">
           <img
             src="images/gDev.svg"
             alt="Game Development icon"
-            width="150px"
-          />
-          <a>Game Development</a>
+            width="150"
+          /><span>Game Development</span>
         </div>
         <div class="_box">
-          <img src="images/gdevelop.png" alt="GDevelop icon" width="150px" />
-          <a>GDevelop</a>
+          <img src="images/gdevelop.png" alt="GDevelop icon" width="150" /><span
+            >GDevelop</span
+          >
         </div>
         <div class="_box">
-          <img src="images/godot-icon.png" alt="Godot logo" width="180px" />
-          <a>Godot</a>
+          <img src="images/unity.png" alt="Unity icon" width="150" /><span
+            >Unity</span
+          >
+        </div>
+        <div class="_box">
+          <img src="images/godot-icon.png" alt="Godot logo" width="180" /><span
+            >Godot</span
+          >
         </div>
       </section>
 
       <div class="hrl"></div>
 
+      <!-- Projects Section -->
       <section class="projects" id="projects">
         <h2 class="_head">Projects</h2>
+
         <div class="_box">
           <img
             src="images/project Images/quiz-maker.png"
@@ -195,7 +215,34 @@
             rel="noopener"
             >Complete Quiz Maker app</a
           >
+          <a
+            href="https://github.com/dskye77/quiz-maker"
+            class="source_code"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/images/source_code.svg" alt="Source code" />
+          </a>
         </div>
+
+        <div class="_box">
+          <img src="images/project Images/todolist.png" alt="To do list" />
+          <a
+            href="https://to-do-list-nnje.vercel.app"
+            target="_blank"
+            rel="noopener"
+            >To Do List</a
+          >
+          <a
+            href="https://github.com/dskye77/to-do-list"
+            class="source_code"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/images/source_code.svg" alt="Source code" />
+          </a>
+        </div>
+
         <div class="_box">
           <img
             src="images/project Images/hulu.png"
@@ -207,19 +254,37 @@
             rel="noopener"
             >Re-design of an existing Website</a
           >
+          <a
+            href="https://github.com/dskye77/hulu.com"
+            class="source_code"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/images/source_code.svg" alt="Source code" />
+          </a>
         </div>
+
         <div class="_box">
           <img
             src="/images/project Images/html-css.png"
             alt="HTML CSS mini Projects"
           />
           <a
-            target="_blank"
             href="https://html-css-projects-brown.vercel.app"
+            target="_blank"
             rel="noopener"
             >HTML CSS Projects</a
           >
+          <a
+            href="https://github.com/dskye77/HTML-CSS-ANIMATIONS"
+            class="source_code"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/images/source_code.svg" alt="Source code" />
+          </a>
         </div>
+
         <div class="_box">
           <img
             src="images/project Images/chat-app.png"
@@ -231,7 +296,16 @@
             rel="noopener"
             >Chat App Prototype</a
           >
+          <a
+            href="https://github.com/dskye77/Chat-App"
+            class="source_code"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/images/source_code.svg" alt="Source code" />
+          </a>
         </div>
+
         <div class="_box">
           <img
             src="images/project Images/dvs-schls img.png"
@@ -243,7 +317,16 @@
             rel="noopener"
             >Responsive School Website Template</a
           >
+          <a
+            href="https://github.com/dskye77/school-website-template"
+            class="source_code"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="/images/source_code.svg" alt="Source code" />
+          </a>
         </div>
+
         <div class="_box">
           <img
             src="images/project Images/bubbleTemplate.png"
@@ -256,6 +339,7 @@
             >Bubble Shooter Template (GDevelop)</a
           >
         </div>
+
         <div class="_box">
           <img
             src="images/project Images/connectDots.png"
@@ -268,6 +352,7 @@
             >Connect The Dots Game</a
           >
         </div>
+
         <div class="_box">
           <img
             src="images/project Images/sCity.png"
@@ -282,6 +367,7 @@
 
       <div class="hrl"></div>
 
+      <!-- Contact Section -->
       <section class="contact" id="contact">
         <h2 class="_head">Contact</h2>
         <div class="contact-text">
@@ -292,30 +378,33 @@
             feel free to reach out!
           </p>
         </div>
+
         <div class="contact-information">
-          <span>
-            📧 Email:
+          <!-- Email -->
+          <span
+            >📧 Email:
             <a href="mailto:dskyle77@gmail.com" class="contact-link"
               >dskyle77@gmail.com</a
-            >
-          </span>
+            ></span
+          >
           <a
             href="mailto:dskyle77@gmail.com"
-            class="contact-icon"
             target="_blank"
+            class="contact-icon"
             ><img src="images/relevant icons/email.svg" alt="Email"
           /></a>
 
-          <span>
-            💻 GitHub:
+          <!-- GitHub -->
+          <span
+            >💻 GitHub:
             <a
               href="https://github.com/dskye77"
               class="contact-link"
               target="_blank"
               rel="noopener"
               >github.com/dskye77</a
-            >
-          </span>
+            ></span
+          >
           <a
             href="https://github.com/dskye77"
             target="_blank"
@@ -324,36 +413,37 @@
             ><img src="images/relevant icons/github.svg" alt="GitHub"
           /></a>
 
-          <span>
-            📞 Phone:
+          <!-- Phone -->
+          <span
+            >📞 Phone:
             <a href="tel:+2348161592059" class="contact-link"
               >+234 816 159 2059</a
-            >
-          </span>
-          <a href="tel:+2348161592059" target="_blank" class="contact-icon">
-            <img src="images/relevant icons/phone.svg" alt="Phone"
+            ></span
+          >
+          <a href="tel:+2348161592059" target="_blank" class="contact-icon"
+            ><img src="images/relevant icons/phone.svg" alt="Phone"
           /></a>
 
-          <span>
-            🗨️ WhatsApp:
+          <!-- WhatsApp -->
+          <span
+            >🗨️ WhatsApp:
             <a
               href="https://wa.me/2348161592059"
               class="contact-link"
               target="_blank"
               rel="noopener"
-            >
-              +234 816 159 2059
-            </a>
-          </span>
+              >+234 816 159 2059</a
+            ></span
+          >
           <a
             href="https://wa.me/2348161592059"
             target="_blank"
             class="contact-icon"
             rel="noopener"
-          >
-            <img src="images/relevant icons/whatsapp.svg" alt="WhatsApp"
+            ><img src="images/relevant icons/whatsapp.svg" alt="WhatsApp"
           /></a>
         </div>
+
         <h2 class="end">Made by David Onyema</h2>
       </section>
     </main>
