@@ -3,451 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David Onyema | Web & Game Developer Portfolio</title>
-    <meta
-      name="description"
-      content="Explore the portfolio of David Onyema, a frontend web and game developer based in Lagos, Nigeria. Discover projects built with HTML, CSS, JavaScript, GDevelop, and Godot."
-    />
-    <meta
-      name="keywords"
-      content="David Onyema, web developer, game developer, frontend developer, HTML, CSS, JavaScript, Godot, GDevelop, Lagos Nigeria"
-    />
-    <meta name="author" content="David Onyema" />
-
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="David Onyema | Web & Game Developer Portfolio"
-    />
-    <meta
-      property="og:description"
-      content="Discover David Onyema's creative web and game development projects."
-    />
-    <meta
-      property="og:image"
-      content="https://yourdomain.com/images/hero-image.png"
-    />
-    <meta property="og:url" content="https://yourdomain.com" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="David Onyema | Web & Game Developer Portfolio"
-    />
-    <meta
-      name="twitter:description"
-      content="Explore projects and skills of David Onyema, a web & game developer."
-    />
-    <meta
-      name="twitter:image"
-      content="https://yourdomain.com/images/hero-image.png"
-    />
-
-    <!-- Favicon -->
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Person",
-            "name": "David Onyema",
-            "url": "https://yourdomain.com",
-            "jobTitle": "Web & Game Developer",
-            "email": "mailto:dskyle77@gmail.com",
-            "sameAs": [
-              "https://github.com/dskye77",
-              "https://wa.me/2348161592059"
-            ],
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Lagos",
-              "addressCountry": "Nigeria"
-            }
-          },
-          {
-            "@type": "WebSite",
-            "url": "https://yourdomain.com",
-            "name": "David Onyema Portfolio",
-            "description": "A portfolio showcasing the web and game development projects of David Onyema."
-          }
-        ]
+    <title>Image Source - David Onyema</title>
+    <style>
+      body {
+        background: #000;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
       }
-    </script>
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body id="body">
-    <header id="head">
-      <div class="head-nav">
-        <h1 class="h1">My Portfolio</h1>
-        <ul class="navigation" id="nav-menu">
-          <li>
-            <a
-              class="cancel"
-              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-            >
-              <img src="/images/cancel.svg" alt="Close menu" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="#home"
-              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#skills"
-              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-              >Skills</a
-            >
-          </li>
-          <li>
-            <a
-              href="#projects"
-              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact"
-              onclick="removeClass('show','nav-menu'); removeClass('show','overlay'); removeClass('overlay-active','body')"
-              >Contact</a
-            >
-          </li>
-        </ul>
+  <body>
+    <!-- Hero image -->
+    <img src="/images/hero-image.png" alt="Hero image" />
 
-        <div class="overlay" id="overlay"></div>
+    <!-- Skills -->
+    <img src="images/HTML-logo.png" alt="HTML" />
+    <img src="images/CSS.png" alt="CSS" />
+    <img src="images/JS.png" alt="JavaScript" />
+    <img src="images/gDev.svg" alt="Game Development" />
+    <img src="images/gdevelop.png" alt="GDevelop" />
+    <img src="images/unity.png" alt="Unity" />
+    <img src="images/godot-icon.png" alt="Godot" />
 
-        <div
-          class="hamburger"
-          onclick="addClass('show','nav-menu'); addClass('show','overlay'); addClass('overlay-active','body')"
-        >
-          <img src="/images/hamburger.svg" alt="Open menu" />
-        </div>
-      </div>
+    <!-- Projects -->
+    <img src="images/project Images/quiz-maker.png" alt="Quiz Maker" />
+    <img src="images/project Images/todolist.png" alt="To Do List" />
+    <img src="images/project Images/hulu.png" alt="Hulu redesign" />
+    <img
+      src="/images/project Images/html-css.png"
+      alt="HTML CSS mini projects"
+    />
+    <img src="images/project Images/chat-app.png" alt="Chat app" />
+    <img src="images/project Images/dvs-schls img.png" alt="School site" />
+    <img src="images/project Images/bubbleTemplate.png" alt="Bubble Shooter" />
+    <img src="images/project Images/connectDots.png" alt="Connect The Dots" />
+    <img src="images/project Images/sCity.png" alt="3D Sandbox" />
 
-      <section class="intro" id="home">
-        <div class="desc">
-          <h2>Hello, I'm</h2>
-          <h2 class="name">David Onyema</h2>
-          <p>
-            Hi, I’m David — a web developer based in Lagos, Nigeria. I
-            specialise in frontend development with HTML, CSS, and JavaScript.
-            I'm also a passionate game developer creating both 2D and 3D games
-            using GDevelop and Godot. Currently, I'm working on a 3D sandbox
-            project and levelling up in Godot daily. Game dev is my playground —
-            I love turning ideas into experiences.
-          </p>
-          <a href="#projects"><button>Explore</button></a>
-        </div>
-        <div class="hero-image">
-          <img src="/images/hero-image.png" alt="Hero image of developer" />
-        </div>
-      </section>
-    </header>
-
-    <main>
-      <!-- Skills Section -->
-      <section class="skills" id="skills">
-        <h2 class="_head">Skills</h2>
-        <div class="_box">
-          <img src="images/HTML-logo.png" alt="HTML logo" width="220" /><span
-            >HTML</span
-          >
-        </div>
-        <div class="_box">
-          <img src="images/CSS.png" alt="CSS logo" width="220" /><span
-            >CSS</span
-          >
-        </div>
-        <div class="_box">
-          <img src="images/JS.png" alt="JavaScript logo" width="180" /><span
-            >JavaScript</span
-          >
-        </div>
-        <div class="_box">
-          <img
-            src="images/gDev.svg"
-            alt="Game Development icon"
-            width="150"
-          /><span>Game Development</span>
-        </div>
-        <div class="_box">
-          <img src="images/gdevelop.png" alt="GDevelop icon" width="150" /><span
-            >GDevelop</span
-          >
-        </div>
-        <div class="_box">
-          <img src="images/unity.png" alt="Unity icon" width="150" /><span
-            >Unity</span
-          >
-        </div>
-        <div class="_box">
-          <img src="images/godot-icon.png" alt="Godot logo" width="180" /><span
-            >Godot</span
-          >
-        </div>
-      </section>
-
-      <div class="hrl"></div>
-
-      <!-- Projects Section -->
-      <section class="projects" id="projects">
-        <h2 class="_head">Projects</h2>
-
-        <div class="_box">
-          <img
-            src="images/project Images/quiz-maker.png"
-            alt="Quiz Maker design preview"
-          />
-          <a
-            href="https://quiz-maker-gxu.vercel.app/"
-            target="_blank"
-            rel="noopener"
-            >Complete Quiz Maker app</a
-          >
-          <a
-            href="https://github.com/dskye77/quiz-maker"
-            class="source_code"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="/images/source_code.svg" alt="Source code" />
-          </a>
-        </div>
-
-        <div class="_box">
-          <img src="images/project Images/todolist.png" alt="To do list" />
-          <a
-            href="https://to-do-list-nnje.vercel.app"
-            target="_blank"
-            rel="noopener"
-            >To Do List</a
-          >
-          <a
-            href="https://github.com/dskye77/to-do-list"
-            class="source_code"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="/images/source_code.svg" alt="Source code" />
-          </a>
-        </div>
-
-        <div class="_box">
-          <img
-            src="images/project Images/hulu.png"
-            alt="Hulu redesign preview"
-          />
-          <a
-            href="https://david-hulu-com.vercel.app/"
-            target="_blank"
-            rel="noopener"
-            >Re-design of an existing Website</a
-          >
-          <a
-            href="https://github.com/dskye77/hulu.com"
-            class="source_code"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="/images/source_code.svg" alt="Source code" />
-          </a>
-        </div>
-
-        <div class="_box">
-          <img
-            src="/images/project Images/html-css.png"
-            alt="HTML CSS mini Projects"
-          />
-          <a
-            href="https://html-css-projects-brown.vercel.app"
-            target="_blank"
-            rel="noopener"
-            >HTML CSS Projects</a
-          >
-          <a
-            href="https://github.com/dskye77/HTML-CSS-ANIMATIONS"
-            class="source_code"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="/images/source_code.svg" alt="Source code" />
-          </a>
-        </div>
-
-        <div class="_box">
-          <img
-            src="images/project Images/chat-app.png"
-            alt="Chat app preview"
-          />
-          <a
-            href="https://chat-app-gxu.vercel.app/"
-            target="_blank"
-            rel="noopener"
-            >Chat App Prototype</a
-          >
-          <a
-            href="https://github.com/dskye77/Chat-App"
-            class="source_code"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="/images/source_code.svg" alt="Source code" />
-          </a>
-        </div>
-
-        <div class="_box">
-          <img
-            src="images/project Images/dvs-schls img.png"
-            alt="School website template"
-          />
-          <a
-            href="https://dvc-schools.vercel.app/"
-            target="_blank"
-            rel="noopener"
-            >Responsive School Website Template</a
-          >
-          <a
-            href="https://github.com/dskye77/school-website-template"
-            class="source_code"
-            target="_blank"
-            rel="noopener"
-          >
-            <img src="/images/source_code.svg" alt="Source code" />
-          </a>
-        </div>
-
-        <div class="_box">
-          <img
-            src="images/project Images/bubbleTemplate.png"
-            alt="Bubble shooter template preview"
-          />
-          <a
-            href="https://dskyle77.itch.io/bubble-shooter-template"
-            target="_blank"
-            rel="noopener"
-            >Bubble Shooter Template (GDevelop)</a
-          >
-        </div>
-
-        <div class="_box">
-          <img
-            src="images/project Images/connectDots.png"
-            alt="Connect the dots game preview"
-          />
-          <a
-            href="https://dskyle77.itch.io/connect-the-dots"
-            target="_blank"
-            rel="noopener"
-            >Connect The Dots Game</a
-          >
-        </div>
-
-        <div class="_box">
-          <img
-            src="images/project Images/sCity.png"
-            alt="3D sandbox game (WIP)"
-            id="sandboxGame"
-          />
-          <a target="_blank" rel="noopener"
-            >3D Sandbox (Work in Progress with Godot)</a
-          >
-        </div>
-      </section>
-
-      <div class="hrl"></div>
-
-      <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <h2 class="_head">Contact</h2>
-        <div class="contact-text">
-          <p>
-            I'm always open to collaborations, freelance work, internships,
-            mentorship opportunities, or even just a friendly tech conversation.
-            Whether you're working on a startup idea or you just like my work —
-            feel free to reach out!
-          </p>
-        </div>
-
-        <div class="contact-information">
-          <!-- Email -->
-          <span
-            >📧 Email:
-            <a href="mailto:dskyle77@gmail.com" class="contact-link"
-              >dskyle77@gmail.com</a
-            ></span
-          >
-          <a
-            href="mailto:dskyle77@gmail.com"
-            target="_blank"
-            class="contact-icon"
-            ><img src="images/relevant icons/email.svg" alt="Email"
-          /></a>
-
-          <!-- GitHub -->
-          <span
-            >💻 GitHub:
-            <a
-              href="https://github.com/dskye77"
-              class="contact-link"
-              target="_blank"
-              rel="noopener"
-              >github.com/dskye77</a
-            ></span
-          >
-          <a
-            href="https://github.com/dskye77"
-            target="_blank"
-            class="contact-icon"
-            rel="noopener"
-            ><img src="images/relevant icons/github.svg" alt="GitHub"
-          /></a>
-
-          <!-- Phone -->
-          <span
-            >📞 Phone:
-            <a href="tel:+2348161592059" class="contact-link"
-              >+234 816 159 2059</a
-            ></span
-          >
-          <a href="tel:+2348161592059" target="_blank" class="contact-icon"
-            ><img src="images/relevant icons/phone.svg" alt="Phone"
-          /></a>
-
-          <!-- WhatsApp -->
-          <span
-            >🗨️ WhatsApp:
-            <a
-              href="https://wa.me/2348161592059"
-              class="contact-link"
-              target="_blank"
-              rel="noopener"
-              >+234 816 159 2059</a
-            ></span
-          >
-          <a
-            href="https://wa.me/2348161592059"
-            target="_blank"
-            class="contact-icon"
-            rel="noopener"
-            ><img src="images/relevant icons/whatsapp.svg" alt="WhatsApp"
-          /></a>
-        </div>
-
-        <h2 class="end">Made by David Onyema</h2>
-      </section>
-    </main>
-
-    <script src="main.js"></script>
+    <!-- Icons (optional) -->
+    <img src="/images/source_code.svg" alt="Source code icon" />
+    <img src="images/relevant icons/email.svg" alt="Email" />
+    <img src="images/relevant icons/github.svg" alt="GitHub" />
+    <img src="images/relevant icons/phone.svg" alt="Phone" />
+    <img src="images/relevant icons/whatsapp.svg" alt="WhatsApp" />
   </body>
 </html>
